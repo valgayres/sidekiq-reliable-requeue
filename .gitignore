@@ -1,3 +1,4 @@
 .idea
 .vscode
 sidekiq-reliable-requeue-*.gem
+.ruby-version
