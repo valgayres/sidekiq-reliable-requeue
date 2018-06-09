@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'sidekiq-reliable-requeue'
-  gem.version     = '0.1.0'
+  gem.version     = '0.5.0'
   gem.date        = '2018-06-07'
   gem.summary     = 'Sidekiq middleware to handle requeuing of jobs if the worker gets badly terminated or crashes'
   gem.authors     = ['Vincent Algayres']
