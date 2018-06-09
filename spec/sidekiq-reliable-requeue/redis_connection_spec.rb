@@ -13,7 +13,7 @@ describe SidekiqReliableRequeue::RedisConnection, redis: true do
   it('should execute set') do
     random_key = 'tatat'
     SidekiqReliableRequeue::RedisConnection.set('tutu', random_key)
-    expect(redis_for_test.get('tutu')).to eql(random_key)
+    expect(redis_for_test.get('tutu')).to eql('random_key')
   end
 
 end
