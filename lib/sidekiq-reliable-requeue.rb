@@ -1,3 +1,4 @@
+require 'sidekiq'
 require 'sidekiq-reliable-requeue/redis_connection'
 require 'sidekiq-reliable-requeue/middleware'
 require 'sidekiq-reliable-requeue/worker'

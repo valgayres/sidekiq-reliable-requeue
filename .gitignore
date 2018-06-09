@@ -2,3 +2,4 @@
 .vscode
 sidekiq-reliable-requeue-*.gem
 .ruby-version
+Gemfile.lock
