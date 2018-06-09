@@ -19,7 +19,7 @@ module SidekiqReliableRequeue
       RedisConnection.hdel(SidekiqReliableStaleJobsKey, key)
     end
 
-    def requeue_stale_jobs
+    def self.requeue_stale_jobs
       keys = RedisConnection.hkeys(SidekiqReliableStaleJobsKey)
 
       if keys.empty?
@@ -33,7 +33,7 @@ module SidekiqReliableRequeue
         sidekiq_msg = JSON.parse(RedisConnection.hget(SidekiqReliableStaleJobsKey, key))
 
         Sidekiq.logger.info("Preparing job #{key} to be requeued in #{sidekiq_msg['requeue_timeout']}s")
-        Worker.perform_in(sidekiq_msg['requeue_timeout'], key)
+        self.perform_in(sidekiq_msg['requeue_timeout'], key)
       end
     end
   end

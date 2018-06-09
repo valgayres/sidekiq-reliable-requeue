@@ -11,4 +11,7 @@ Gem::Specification.new do |s|
       'lib/sidekiq-reliable-requeue/worker.rb'
   ]
   s.license       = 'MIT'
+
+  s.add_dependency 'sidekiq', '>= 2.0'
+
 end
