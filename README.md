@@ -1,15 +1,16 @@
 # sidekiq-reliable-requeue
 
 [![Build Status](https://travis-ci.org/valgayres/sidekiq-reliable-requeue.svg)](https://travis-ci.org/valgayres/sidekiq-reliable-requeue)
+[![Gem Version](https://badge.fury.io/rb/sidekiq-reliable-requeue.svg)](https://badge.fury.io/rb/sidekiq-reliable-requeue)
 
-SidekiqReliableRequeue is a sidekiq middleware to handle requeuing of jobs if the worker gets badly terminated or crashes.
+`SidekiqReliableRequeue` is a sidekiq middleware to handle requeuing of jobs if the worker gets badly terminated or crashes.
 
 
 ## Compatibility
 
-SidekiqReliableRequeue supports Sidekiq from version 2 and Ruby from version 2.0.0.
+`SidekiqReliableRequeue` supports Sidekiq from version 2 and Ruby from version 2.0.0.
 
-Warning, SidekiqReliableRequeue will only work when Sidekiq is used with Redis as datastore.
+Warning, `SidekiqReliableRequeue` will only work when Sidekiq is used with Redis as datastore.
 
 ## Installation
 
